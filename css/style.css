@@ -1,0 +1,94 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  a.skip {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+  }
+  a.skip:hover {
+    border: 2px solid rgb(255, 132, 110); 
+    padding: 5px;
+    border-radius: 10px; 
+}
+
+  a.skip:focus {
+    text-decoration: underline;
+    color: blue; 
+}
+  
+  a.skip:focus, a.skip-main:active {
+    overflow: auto;
+    padding: 5px;
+    position: static; 
+    left: 0; 
+    top: 20px; 
+    width: auto; 
+    height: auto; 
+    z-index: 999;
+  }
+
+form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  width:70%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #1F1A38;
+  background: #EAD7D1;
+  font-family: 'Inter';
+}
+
+.radio {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  color: #702082;
+}
+
+.name {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #9B9A6D;
+}
+
+
+#message {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  width: 100%;
+  padding: 10px;
+  resize: vertical;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
